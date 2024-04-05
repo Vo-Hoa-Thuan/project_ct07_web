@@ -1,0 +1,223 @@
+/* Gồm các trang addproduct, adduser, edituser, editproduct */
+
+/* Adjusting modal backdrop */
+.modal-backdrop {
+    opacity: 0.5 !important; 
+    background-color: #000; 
+}
+
+/* Styling modal content */
+.modal-content {
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); 
+    margin: auto;
+    max-width: 600px; 
+    height: 650px;
+    user-select: none;
+    overflow: hidden;
+}
+
+.modal-content-user {
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); 
+    margin: auto;
+    max-width: 600px; 
+    height: 650px;
+    user-select: none;
+    overflow: hidden;
+}
+
+
+.modal-content-voucher {
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); 
+    margin: auto;
+    max-width: 500px; 
+    height: 400px;
+    user-select: none;
+    overflow: hidden;
+    margin-top: 150px;
+}
+/* Styling save button */
+.btn-save {
+    background: rgb(191 255 184) !important;
+    border-radius: 5px;
+    box-shadow: none !important;
+    color: rgb(13 136 0) !important;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 24px;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Styling cancel button */
+.btn-cancel {
+    color: #d21010 !important;
+    border: none;
+    background-color: #ffbdbd !important;
+    box-shadow: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 24px;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Styling form group */
+.form-group {
+    margin-bottom: 20px; /* Khoảng cách giữa các dòng */
+}
+
+/* Styling control label */
+.control-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block; /* Hiển thị label trên dòng riêng biệt */
+}
+
+/* Styling form control */
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styling focused input */
+.form-control:focus {
+    border-color: #6e9feb;
+}
+
+/* Styling save and cancel buttons */
+.btn-save,
+.btn-cancel {
+   
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for save and cancel buttons */
+.btn-save:hover,
+.btn-cancel:hover {
+    opacity: 0.8;
+}
+
+.row_tabel_edit{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #d21010;
+    margin-bottom: 40px;
+}
+
+.row_tabel_edit_user{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #d21010;
+}
+
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.button-container form,
+.button-container a {
+    margin-right: 10px; /* Khoảng cách giữa các nút */
+}
+
+#editFormContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    width: 100%;
+    max-height: 600px;
+    overflow-y: auto;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ mờ 50% */
+    z-index: 999; /* Đảm bảo lớp mờ hiển thị trên tất cả các phần tử khác */
+    display: none; /* Mặc định ẩn lớp mờ */
+}
+
+.container_addProduct {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: red;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn_addproduct {
+display: flex;
+justify-content: space-between;
+}
+
+.btn_addproduct button {
+background-color: #4caf50;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+flex: 1;
+margin-right: 10px; /* Khoảng cách giữa nút "Thêm sản phẩm" và nút "Hủy bỏ" */
+
+}
+
+.btn_addproduct button:last-child {
+background-color: #f44336; /* Màu nền của nút "Hủy bỏ" */
+}
+
+.btn_addproduct button:hover {
+opacity: 0.8; /* Độ mờ của nút khi di chuột qua */
+}
+
+

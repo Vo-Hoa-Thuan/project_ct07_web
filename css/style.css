@@ -1,0 +1,229 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 100px; /* Thêm padding để tránh tràn ra khỏi màn hình */
+  box-sizing: border-box;
+  user-select: none;  
+
+}
+
+.ps-product__content {
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  flex: 1 1 calc(25% - 20px); /* Định kích thước cho mỗi sản phẩm, 25% cho 4 sản phẩm trên một hàng */
+  max-width: calc(25% - 20px); /* Đặt giới hạn cho kích thước tối đa */
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  .ps-product__content {
+      flex: 1 1 calc(33.33% - 20px); /* Định kích thước cho màn hình nhỏ hơn */
+      max-width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 992px) {
+  .ps-product__content {
+      flex: 1 1 calc(50% - 20px); /* Định kích thước cho màn hình nhỏ nhất */
+      max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .ps-product__content {
+      flex: 1 1 calc(100% - 20px); /* Điều chỉnh kích thước cho màn hình nhỏ nhất */
+      max-width: calc(100% - 20px);
+  }
+}
+
+
+.ps-product__content:hover {
+  transform: scale(1.05);
+}
+
+.ps-product__variants {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.ps-product__variant img {
+  max-width: 100%;
+  height: 300px;
+  margin-right: 5px;
+}
+
+.ps-product__detail {
+  text-align: center;
+}
+
+.ps-product__name {
+  text-decoration: none;
+  color: #c48c46;
+  font-size: 16px;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 5px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.ps-product__price {
+  font-size: 18px;
+  color: #ff5733;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 50px; /* Giảm khoảng cách giữa tên và giá sản phẩm */
+  height: 30px; /* Điều chỉnh chiều cao tối đa của giá sản phẩm */
+  overflow: hidden;
+}
+
+
+.ps-product__categories a {
+  text-decoration: none;
+  color: #555;
+  margin-right: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+.sale-label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff5733;
+  color: #fff;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.ps-product__add-to-cart {
+  position: absolute;
+  bottom: 0%; 
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  background-color: transparent;
+  color: #767676;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  box-shadow: 0 2px 1px 0.5px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.ps-product__content:hover .ps-product__add-to-cart {
+  opacity: 1;
+}
+
+.ps-product__add-to-cart:hover {
+  background-color: #767676;
+  color: #f7f7f7;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: #333;
+  padding: 8px 12px;
+  text-decoration: none;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: #ddd;
+}
+
+.pagination .active {
+  background-color: #333;
+  color: white;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; 
+  margin-bottom: 10px;
+}
+
+.inline-group {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #111;
+  padding: 10px 10px;
+}
+
+.form-group-price,
+.form-group_price,
+.form-group_name {
+  margin-right: 50px; 
+}
+
+.filter-form button {
+  margin-top: 0; 
+}
+
+.form-group-price {
+  display: flex; 
+  align-items: center;
+}
+
+.form-group-price p {
+  margin-right: 20px; 
+  font-weight: bold;
+}
+
+.form-group-price input {
+  flex: 1;
+  margin-right: 40px;
+  margin-top: 10px;
+  cursor: pointer;
+
+}
+
+.form-group_price{
+  cursor: pointer;
+}
+
+.filter-form button {
+  background-color: #363636; 
+  color: white; 
+  padding: 10px 40px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+.filter-form button:hover {
+  background-color: #282828; 
+}
+
+
+

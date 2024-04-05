@@ -1,0 +1,114 @@
+.container_cart {
+  font-family: Arial, sans-serif;
+  padding: 0 100px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+/* tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+
+tr#row-total {
+  font-weight: bold;
+}
+
+.product-quantity input {
+  width: 50px;
+  text-align: center;
+}
+
+.product-delete {
+  text-align: center;
+  cursor: pointer;
+  color: red;
+}
+
+.btn_update_cart input[type="submit"] {
+  width: 15%;
+  background-color: #363636;
+  color: white;
+  padding: 15px 0; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 0; 
+  cursor: pointer;
+  margin-left: 85%;
+}
+
+.red-background {
+  background-color: #363636;
+  color: white; /* Thêm màu chữ trắng để chữ hiển thị rõ trên nền đỏ */
+  /* Các thuộc tính CSS khác tùy chỉnh */
+}
+
+
+.cart_item {
+  background-color: #363636;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.btn_order input[type="submit"] {
+  width: 25%;
+  background-color: #363636;
+  color: white;
+  padding: 15px 0; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 25px 0; 
+  cursor: pointer;
+  margin-left: 75%;
+}
+
+/* CSS of order_detail.php */
+.return-container {
+  float: right;
+  margin: 20px 0;
+  display: block;
+}
+
+.return {
+  padding: 15px 30px;
+  text-align: center;
+  color: #d21010;
+  border: none;
+  background-color: #ffbdbd;
+  box-shadow: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cart_empty{
+    margin: 50px 0;
+    text-align: center;
+}
+.cart_empty a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+.seeAll{
+  color: #1071be;
+  text-align: center;
+}
+
+.title_item{
+  text-align: center;
+}

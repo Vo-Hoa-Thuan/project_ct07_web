@@ -1,0 +1,285 @@
+.container__show_product {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20%;
+    user-select: none;  
+}
+
+.product__image {
+    flex: 1;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: #f7f7f7;
+}
+
+.product__image img {
+    width: 500px;
+    height: auto;
+    border-radius: 5px; 
+}
+
+.icon_image {
+    text-align: center;
+    background-color: #f7f7f7;
+
+}
+
+.icon_image i {
+    color: #767676; 
+    font-size: 30px; 
+    margin-top: 10px;
+
+}
+
+.product__image p {
+    font-size: 14px;
+    color: #767676;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #f7f7f7;
+}
+
+.product__info {
+    flex: 1;
+}
+
+.product_name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product_type {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product_price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #003468; 
+    margin-bottom: 10px;
+}
+
+.stocking {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product_endow {
+    border: 2px solid #4c4c4c;
+    border-radius: 10px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.product_endow__header {
+    background-color: #f2f2f2;
+    padding: 5px 20px;
+    font-size: 16px;
+    border-top-left-radius: 10px; /* Đảm bảo góc trên bên trái của tiêu đề cũng được làm tròn */
+    border-top-right-radius: 10px; /* Đảm bảo góc trên bên phải của tiêu đề cũng được làm tròn */
+}
+
+.product_endow__footer {
+    padding: 15px;
+    font-size: 16px;
+}
+
+.product_endow__footer img {
+    width: 5%;
+    margin-right: 4px;
+    vertical-align: middle; /* Canh giữa theo chiều dọc */
+    display: inline-block; /* Hiển thị hình ảnh và văn bản trên cùng một dòng */
+}
+
+.buy_product {
+    background-color: #ba2832; 
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.buy_product h3 {
+    font-size: 20px;
+}
+
+.buy_product h4 {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.product_policy {
+    margin-bottom: 10px;
+}
+
+.product_policy p {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.product_policy p i {
+    color: #003468; 
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.highlight {
+    color: #FF0000; /* Màu đỏ */
+    font-size: 16px;
+}
+
+.discription {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn_show_description {
+    color: #4c4c4c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 800px;
+    transform: translate(0, 0);
+    margin: 0 auto;
+    user-select: none;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+    margin-bottom: 10px;
+    
+}
+
+.description-text {
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+.btn_show_description i {
+    margin-left: 5px;
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.description-content {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+    width: 800px;
+    margin: 0 auto; /* Căn giữa theo chiều ngang */
+    line-height: 1.6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+    margin-bottom: 20px;
+    border-top: 2px solid #222; /* Thêm đường kẻ dưới */
+    border-top-left-radius: 0; /* Loại bỏ border radius ở top */
+    border-top-right-radius: 0; /* Loại bỏ border radius ở top */
+}
+.description-label {
+    color: #282828; 
+    font-size: 15px;
+    padding: 0 50px;
+}
+
+.description-label_end {
+    color: #282828; 
+    font-size: 15px;
+}
+
+/* Danh sách màu nền cho từng dòng */
+.description-content div:nth-child(odd) {
+    background-color: #fff; /* Màu nền cho dòng lẻ */
+
+}
+
+.description-content div:nth-child(even) {
+    background-color: #f2f2f2; /* Màu nền cho dòng chẵn */
+}
+
+
+.description-content ul{
+    color: #003468;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0 40px;
+}
+.description-content ul li{
+    color: #333;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.description-content ul li i{
+    font-size: 6px;
+    margin-right: 10px;
+}
+
+.note{
+    font-style: italic;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.fullscreen-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999; /* Đảm bảo hình ảnh hiển thị trên cùng */
+    background-color: rgba(0, 0, 0, 0.9); /* Màu nền */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-image img {
+    max-width: 90%; /* Giới hạn chiều rộng tối đa của hình ảnh */
+    max-height: 90%; /* Giới hạn chiều cao tối đa của hình ảnh */
+}
+
+.blur-background {
+    filter: blur(5px); /* Độ mờ của phần nền */
+}
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+    }
+
+    .overlay img {
+        width: 600px;
+        height: 600px;
+        background-color: #f7f7f7;
+    }
+
+    .close-icon {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1000; /* Đảm bảo hiển thị trên các phần khác */
+        display: none; /* Ẩn ban đầu */
+    }
+
+    .close-icon i {
+        font-size: 24px;
+        color: red;
+    }

@@ -1,0 +1,417 @@
+/* CSS HEADER AND FOOTER */
+
+
+/* Đây là css của header */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 0 100px;
+    background-color: rgb(250,250,250);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+}
+
+.header-1{
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.header-2{
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu > li > a {
+    padding: 0 20px;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #C48C46;
+    transition: width 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.menu > li > a:hover{
+    color: #C48C46;
+}
+
+.other {
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    background-color: rgb(191, 251, 251);
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.other > li > a {
+    padding: 0 12px;
+}
+
+.other li a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+  }
+  
+.other li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+  
+.other li a:hover::after {
+    transform: scaleX(1);
+}
+
+.search {
+    position: relative;
+    display: inline-block;
+}
+
+.search input[type="text"] {
+    width: 300px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-style: italic; /* Thêm kiểu chữ in nghiêng */
+    background-color: rgba(255, 255, 255, 0.5); /* Độ trong suốt */
+}
+
+.search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.search button:hover {
+    background-color: #555;
+    opacity: 1;
+}
+
+.search input[type="text"]:hover {
+    border-color: #555;
+}
+
+.overlay_search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Màu đen với opacity là 0.5 */
+    z-index: 999; /* Đảm bảo lớp này hiển thị dưới lớp giả bảng tìm kiếm */
+    display: none; /* Ban đầu ẩn nó đi */
+}
+
+.search-overlay_1 {
+    position: fixed;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 45px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Ban đầu ẩn nó đi */
+    z-index: 1000; /* Đảm bảo lớp này hiển thị trên lớp overlay */ 
+}
+
+.search-overlay_1 .searchInput_0{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #555;
+    position: fixed;
+}
+
+.search-overlay_1 .searchInput_0 i{
+    font-size: 15px;
+}
+
+.search-overlay_1 .searchInput_2{
+    margin-right: 5px;
+    color: #555;
+}
+
+.search-overlay_1 .searchInput_2 i{
+    font-size: 24px;
+}
+
+.search-overlay_1 .searchInput_1 {
+    width: 850px !important;
+    padding: 8px 10px !important;
+    border: none!important;
+    border-radius: 20px !important;
+    font-size: 16px !important;
+    outline: none !important;
+    background-color: rgb(255, 255, 255) !important; /* Độ trong suốt */
+    margin-left: 30px;
+    margin-top: 5px;
+    color: #555;
+}
+
+.search-overlay_2 {
+    position: absolute;
+    top: 49.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 550px;
+    max-height: 550px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Đảm bảo lớp này hiển thị trên lớp overlay */
+    display: none;
+    overflow-y: auto; /* Tạo thanh cuộn dọc khi nội dung vượt quá chiều cao */
+
+}
+
+
+.search-results {
+    /* Thiết lập kiểu dáng, vị trí và giới hạn kích thước */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 100%; /* Sử dụng chiều cao tối đa của phần tử cha (search-overlay_2) */
+}
+
+
+.searchInput_1::placeholder {
+    color: #aaa; /* Màu của placeholder khi không được focus */
+}
+
+.searchInput_1:focus::placeholder {
+    color: #777; /* Màu của placeholder khi được focus */
+}
+
+/* Thay đổi màu con trỏ chuột */
+.searchInput_1:focus {
+    caret-color: #010101;
+}
+
+
+.type{
+    text-align: center;
+    color: red;
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.path {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 0 100px;
+    text-align: center;
+}  
+.path p {
+    display: inline;
+}  
+
+.path p a{
+    color: #a0a0a0;
+}  
+
+.path p:not(:last-child):after {
+    content: '/';
+    margin: 0 5px;
+    opacity: 0.5; /* Đặt mờ cho các mục trước đó */
+    color: #a0a0a0; /* Chuyển màu của các mục trước đó thành màu xám */
+}
+
+.path p:last-child {
+    color: #282828; /* Chuyển màu của cái tên sản phẩm thành màu xanh */
+}
+
+.path p a:hover{
+    color: #282828;
+} 
+
+
+
+.ads{
+    padding: 0 100px;
+}
+
+    /* Đây là css của footer */
+
+
+.straight_line{
+    border-bottom: 1px solid gray; /* Đường viền đường ngang màu xám */
+    margin: 100px 100px 0 100px;
+    }
+
+.row__footer {
+    overflow: hidden; /* Sử dụng clearfix để chống xô lệch float */
+    width: 100%;
+    margin-bottom: 0;
+    background-color: rgb(250, 250, 250);
+    padding: 0 100px;
+}
+
+.boxcenter2 {
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    
+}
+
+.mrr2 {
+    margin-right: 2%;
+}
+
+.boxfooter1 {
+    width: 55%;
+    float: left;
+}
+
+.boxfooter2 {
+    width: 23%;
+    float: left;
+    margin-top: 84px;
+}
+
+.boxfooter2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.boxfooter2 a:hover{
+    text-decoration: none;
+}
+
+.boxfooter3 {
+    width: 18%;
+    float: left;
+    margin-top: 99px;
+    vertical-align: top;
+}
+
+.boxfooter3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.boxfooter3 a:hover{
+    text-decoration: none;
+}
+
+.colorb {
+    color: black;
+}
+
+.mrb10 {
+    margin-bottom: 10px;
+}
+
+footer {
+    width: 100%;
+    background-color: #fff;
+    opacity: 1;
+    min-height: 150px;
+    display: flex; /* Sử dụng Flexbox để cân nhắc các phần tử con */
+}
+
+footer a:hover {
+    color: black;
+    opacity: 0.3;
+    text-decoration: none;
+}
+
+.list_social{
+    font-size: 25px ;
+    margin-right: 5px;
+    transition: color 0.3s;
+}
+
+.list_social :hover{
+    color: red ;
+}
+
+.list_social_payment_visa, 
+.list_social_payment_jcb,
+.list_social_payment_paypal,
+.list_social_payment_banking,
+.list_social_payment_cash{
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.thin-text{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.phone_num a{
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.phone_num a:hover{
+    text-decoration: none;
+}
