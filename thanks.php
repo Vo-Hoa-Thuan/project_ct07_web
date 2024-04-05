@@ -60,6 +60,7 @@
 <body>
     <div class="container">
         <h1>Cảm ơn bạn đã đặt hàng</h1>
+        <h1>hiiiiiii</h1>
         <h3>Đơn hàng của bạn sẽ được giao sớm nhất <i class="fas fa-truck-fast icon-truck"></i></h3>
         <h4><a href="order_history.php">Xem chi tiết đơn hàng</a></h4>
         <h4><a class="btn" href="index.php">Tiếp tục mua hàng</a></h4>
