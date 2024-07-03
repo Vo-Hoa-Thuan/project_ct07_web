@@ -30,7 +30,7 @@ $home = "Trang chủ";
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mainn.css">
     <link rel="stylesheet" href="css/regsiter.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/style_cart.css">

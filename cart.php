@@ -168,6 +168,7 @@ if (isset($_POST['submit_click'])) {
                         <td class="product-img">&nbsp;</td>
                         <td class="product-price">&nbsp;</td>
                         <td class="product-quantity">&nbsp;</td>
+                        
                         <td class="total-money">
                             <? echo number_format($total_price = ($_SESSION['discount_price'] != 0)? $_SESSION['discount_price'] : $total_price, 0, ',', '.') . 'đ' ?>
                         </td>
@@ -195,6 +196,8 @@ if (isset($_POST['submit_click'])) {
                 <div><label>Người nhận: </label><input type="text" value="" name="name" /></div>
                 <div><label>Điện thoại: </label><input type="text" value="" name="phone" /></div>
                 <div><label>Địa chỉ: </label><input type="text" value="" name="address" /></div>
+                <div><label>Chi phí vận chuyển: Miễn phí</label></div>
+
 
                 <div class="btn_order">
                     <input type="submit" name="submit_click" value="Đặt hàng">
